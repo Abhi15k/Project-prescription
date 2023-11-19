@@ -42,7 +42,7 @@ const Login = () => {
                     token: res.data.token,
                 });
                 localStorage.setItem('auth', JSON.stringify(res.data));
-                navigate('/homepage');
+                navigate(`/dashbord/${res.data.user.role === 1 ? 'admin' : 'user'}`);
             } else {
                 alert(res.data.message);
             }
