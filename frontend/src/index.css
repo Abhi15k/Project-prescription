@@ -1,13 +1,88 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@300;400&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* nav bar  */
+.navbar{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px rgba(52, 47, 47, 0.865);
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0 solid gray !important;
 }
+
+.nav-link{
+  font-weight: 300 !important;
+}
+/* nav under Animation */
+.nav-link{
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.nav-link::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.navbar-brand{
+  font-weight: 700;
+  font-family: 'roboto',sans-serif;
+}
+
+.footer{
+  color: white;
+  padding: 25px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover{
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+
+.contactus{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.contactus div img{
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px  rgba(52, 47, 47, 0.865);
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0 solid gray !important;
+}
+
+.contactus div img:hover{
+  transform: translateY(-5px);
+}
+
