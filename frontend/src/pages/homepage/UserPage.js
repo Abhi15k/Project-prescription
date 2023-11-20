@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../../components/Layout/Layout'
 
 const UserPage = () => {
     return (
-        <h1>UserPage</h1>
+        <Layout>
+            <h1>UserPage</h1>
+        </Layout>
     )
 }
 
