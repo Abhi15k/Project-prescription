@@ -71,10 +71,10 @@ const Header = () => {
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Pharmacy</NavLink>
+                                                <NavLink className="dropdown-item" to={"/dashbord/admin/addPharmacy"} >Add Pharmacy</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Manage Pharmacy</NavLink>
+                                                <NavLink to={"/dashbord/admin/managePharmacy"} className="dropdown-item" >Manage Pharmacy</NavLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -99,13 +99,13 @@ const Header = () => {
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add State</NavLink>
+                                                <NavLink className="dropdown-item" to={"/dashbord/admin/addState"} >Add State</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Add District</NavLink>
+                                                <NavLink to={"/dashbord/admin/addDistrict"} className="dropdown-item" >Add District</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Add City</NavLink>
+                                                <NavLink to={"/dashbord/admin/addCity"} className="dropdown-item" >Add City</NavLink>
                                             </li>
                                         </ul>
                                     </li>
