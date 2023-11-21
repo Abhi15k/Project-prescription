@@ -26,6 +26,7 @@ function App() {
       </Route>
       <Route path='/dashbord' element={<AdminRoute />} >
         <Route path='admin' element={<AdminPage />} />
+        <Route path='admin/home' element={<AdminPage />} />
       </Route>
     </Routes>
 
