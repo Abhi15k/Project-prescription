@@ -5,7 +5,7 @@ function AddPharmacy() {
   return (
     <Layout>
       <h1>AddPharmacy</h1>
-      </Layout>
+    </Layout>
   )
 }
 

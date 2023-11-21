@@ -136,9 +136,7 @@ const Header = () => {
                                     <li className="nav-item">
                                         <NavLink to="/dashbord/admin/manageUser" className="nav-link" >Manage User</NavLink>
                                     </li>
-                                </>)
-
-                            }
+                                </>)}
 
 
 

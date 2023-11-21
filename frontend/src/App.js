@@ -16,7 +16,11 @@ import AddDoctor from './pages/homepage/admin/AddDoctor';
 import ManageDoctor from './pages/homepage/admin/ManageDoctor';
 import ManageComplaint from './pages/homepage/admin/ManageComplaint';
 import ManageUser from './pages/homepage/admin/ManageUser';
-
+import AddPharmacy from './pages/homepage/admin/AddPharmacy';
+import ManagePharmacy from './pages/homepage/admin/ManagePharmacy';
+import AddState from './pages/homepage/admin/AddState';
+import AddDistrict from './pages/homepage/admin/AddDistrict';
+import AddCity from './pages/homepage/admin/AddCity';
 
 function App() {
   return (
@@ -39,6 +43,12 @@ function App() {
         <Route path='admin/manageDoctor' element={<ManageDoctor />} />
         <Route path='admin/manageComplaint' element={<ManageComplaint />} />
         <Route path='admin/manageUser' element={<ManageUser />} />
+        <Route path='admin/addPharmacy' element={< AddPharmacy />} />
+        <Route path='admin/managePharmacy' element={< ManagePharmacy />} />
+        <Route path='admin/addState' element={< AddState />} />
+        <Route path='admin/addDistrict' element={< AddDistrict />} />
+        <Route path='admin/addCity' element={< AddCity />} />
+
       </Route>
     </Routes>
 
