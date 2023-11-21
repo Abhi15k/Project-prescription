@@ -11,11 +11,13 @@ import Prescription from './pages/homepage/user/Prescription';
 import Account from './pages/homepage/user/Account';
 import About from './pages/homepage/user/About';
 import AddCompany from './pages/homepage/admin/AddCompany';
+
 import AddMedicine from './pages/homepage/admin/AddMedicine';
 import AddDoctor from './pages/homepage/admin/AddDoctor';
 import ManageDoctor from './pages/homepage/admin/ManageDoctor';
 import ManageComplaint from './pages/homepage/admin/ManageComplaint';
 import ManageUser from './pages/homepage/admin/ManageUser';
+
 
 function App() {
   return (
