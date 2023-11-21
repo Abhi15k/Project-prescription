@@ -19,7 +19,7 @@ const Header = () => {
                         <span className="navbar-toggler-icon" />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <Link to="/" className="navbar-brand " >Prescription</Link>
+                        <Link to="#" className="navbar-brand " >Prescription</Link>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             {
                                 auth?.user?.role === 1 ? (<>
@@ -116,9 +116,18 @@ const Header = () => {
                                     <li className="nav-item">
                                         <NavLink to="/dashbord/user" className="nav-link" >Home</NavLink>
                                     </li>
-
-                                    <li className="nav-item">
-                                        <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Complaints
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/addComplaint"} >Add Complaint</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to="/dashbord/user/yourComplaints" className="dropdown-item" >Your Complaints</NavLink>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -134,8 +143,9 @@ const Header = () => {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/dashbord/user/complaint" className="nav-link" >Complaint</NavLink>
+                                        <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
                                     </li>
+
                                 </>)
 
                             }

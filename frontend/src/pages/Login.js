@@ -18,7 +18,7 @@ const Login = () => {
         if (email === '') {
             setEmailError(true);
             return;
-        } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+        } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
             setEmailError(true);
             return;
         } else {

@@ -9,7 +9,7 @@ const Footer = () => {
                     <p>Conditions of Use Privacy Notice Your Ads Privacy Choices</p>
                 </div>
                 <div className="copyright text-center">
-                    © 1996-2023, Prescription.com, Inc. or its affiliates
+                    ©2023, Prescription.com
                 </div>
                 <p className="text-center mt-3">
                     <Link to="/dashbord/user/about">About</Link>|
