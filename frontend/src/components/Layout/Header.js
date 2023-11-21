@@ -48,7 +48,7 @@ const Header = () => {
                                     </li>
                                 </>) : (<>
                                     <li className="nav-item">
-                                        <NavLink to="/dashbord/admin/home" className="nav-link" >Home</NavLink>
+                                        <NavLink to="/dashbord/user/home" className="nav-link" >Home</NavLink>
                                     </li>
 
                                     <li className="nav-item dropdown">
@@ -57,7 +57,7 @@ const Header = () => {
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Company</NavLink>
+                                                <NavLink className="dropdown-item" to={"/dashbord/admin/addCompany"} >Add Company</NavLink>
                                             </li>
                                             <li>
                                                 <NavLink to={"/"} className="dropdown-item" >Add Medicine</NavLink>

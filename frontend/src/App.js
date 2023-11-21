@@ -10,6 +10,7 @@ import Complaint from './pages/homepage/user/Complaint';
 import Prescription from './pages/homepage/user/Prescription';
 import Account from './pages/homepage/user/Account';
 import About from './pages/homepage/user/About';
+import AddCompany from './pages/homepage/admin/AddCompany';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
       </Route>
       <Route path='/dashbord' element={<AdminRoute />} >
         <Route path='admin' element={<AdminPage />} />
-        <Route path='admin/home' element={<AdminPage />} />
+        <Route path='admin/addCompany' element={<AddCompany />} />
       </Route>
     </Routes>
 
