@@ -22,33 +22,9 @@ const Header = () => {
                         <Link to="/" className="navbar-brand " >Prescription</Link>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             {
-                                !auth.user ? (<>
+                                auth?.user?.role === 1 ? (<>
                                     <li className="nav-item">
-                                        <NavLink to="/dashbord/user/home" className="nav-link" >Home</NavLink>
-                                    </li>
-
-                                    <li className="nav-item">
-                                        <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            {auth?.user.name}
-                                        </NavLink>
-                                        <ul className="dropdown-menu">
-                                            <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Account</NavLink>
-                                            </li>
-                                            <li>
-                                                <NavLink onClick={handleLogout} to="/" className="dropdown-item" >Logout</NavLink>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink to="/dashbord/user/complaint" className="nav-link" >Complaint</NavLink>
-                                    </li>
-                                </>) : (<>
-                                    <li className="nav-item">
-                                        <NavLink to="/dashbord/user/home" className="nav-link" >Home</NavLink>
+                                        <NavLink to="/dashbord/admin" className="nav-link" >Home</NavLink>
                                     </li>
 
                                     <li className="nav-item dropdown">
@@ -135,6 +111,30 @@ const Header = () => {
 
                                     <li className="nav-item">
                                         <NavLink to="/dashbord/user/home" className="nav-link" >Manage User</NavLink>
+                                    </li>
+                                </>) : (<>
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user" className="nav-link" >Home</NavLink>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
+                                    </li>
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {auth?.user.name}
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Account</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink onClick={handleLogout} to="/" className="dropdown-item" >Logout</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/complaint" className="nav-link" >Complaint</NavLink>
                                     </li>
                                 </>)
 

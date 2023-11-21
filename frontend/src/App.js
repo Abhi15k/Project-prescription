@@ -24,7 +24,6 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path='/dashbord' element={<PrivateRoute />}>
         <Route path='user' element={<UserPage />} />
-        <Route path='user/home' element={<UserPage />} />
         <Route path='user/prescription' element={<Prescription />} />
         <Route path='user/account' element={<Account />} />
         <Route path='user/complaint' element={<Complaint />} />
@@ -33,11 +32,11 @@ function App() {
       <Route path='/dashbord' element={<AdminRoute />} >
         <Route path='admin' element={<AdminPage />} />
         <Route path='admin/addCompany' element={<AddCompany />} />
-        <Route path= 'admin/addPharmacy' element={< AddPharmacy />} />
-        <Route path= 'admin/managePharmacy' element={< ManagePharmacy />} />
-        <Route path= 'admin/addState' element={< AddState />} />
-        <Route path= 'admin/addDistrict' element={< AddDistrict />} />
-        <Route path= 'admin/addCity' element={< AddCity />} />
+        <Route path='admin/addPharmacy' element={< AddPharmacy />} />
+        <Route path='admin/managePharmacy' element={< ManagePharmacy />} />
+        <Route path='admin/addState' element={< AddState />} />
+        <Route path='admin/addDistrict' element={< AddDistrict />} />
+        <Route path='admin/addCity' element={< AddCity />} />
       </Route>
     </Routes>
 
