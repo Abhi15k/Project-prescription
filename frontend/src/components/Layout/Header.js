@@ -21,28 +21,125 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <Link to="/" className="navbar-brand " >Prescription</Link>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                            <li className="nav-item">
-                                <NavLink to="/dashbord/user/home" className="nav-link" >Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    {auth?.user.name}
-                                </NavLink>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Account</NavLink>
+                            {
+                                !auth.user ? (<>
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/home" className="nav-link" >Home</NavLink>
                                     </li>
-                                    <li>
-                                        <NavLink onClick={handleLogout} to="/login" className="dropdown-item" >Logout</NavLink>
+
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/prescription" className="nav-link" >Your Prescription</NavLink>
                                     </li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink to="/dashbord/user/complaint" className="nav-link" >Complaint</NavLink>
-                            </li>
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {auth?.user.name}
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Account</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink onClick={handleLogout} to="/" className="dropdown-item" >Logout</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/complaint" className="nav-link" >Complaint</NavLink>
+                                    </li>
+                                </>) : (<>
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/admin/home" className="nav-link" >Home</NavLink>
+                                    </li>
+
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Medicine
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Company</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/"} className="dropdown-item" >Add Medicine</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Pharmacy
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Pharmacy</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/"} className="dropdown-item" >Manage Pharmacy</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Doctor
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Doctor</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/"} className="dropdown-item" >Manage Doctor</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Manage Address
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add State</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/"} className="dropdown-item" >Add District</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/"} className="dropdown-item" >Add City</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            View Complaint
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Manage Complaint</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item dropdown">
+                                        <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {auth?.user.name}
+                                        </NavLink>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Account</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink onClick={handleLogout} to="/" className="dropdown-item" >Logout</NavLink>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <NavLink to="/dashbord/user/home" className="nav-link" >Manage User</NavLink>
+                                    </li>
+                                </>)
+
+                            }
+
 
 
                         </ul>
