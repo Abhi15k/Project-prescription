@@ -36,7 +36,7 @@ const Header = () => {
                                                 <NavLink className="dropdown-item" to={"/dashbord/admin/addCompany"} >Add Company</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Add Medicine</NavLink>
+                                                <NavLink to={"/dashbord/admin/addMedicine"} className="dropdown-item" >Add Medicine</NavLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -61,10 +61,10 @@ const Header = () => {
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Add Doctor</NavLink>
+                                                <NavLink className="dropdown-item" to={"/dashbord/admin/addDoctor"} >Add Doctor</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Manage Doctor</NavLink>
+                                                <NavLink to={"/dashbord/admin/manageDoctor"} className="dropdown-item" >Manage Doctor</NavLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -91,7 +91,7 @@ const Header = () => {
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <NavLink className="dropdown-item" to={"/dashbord/user/account"} >Manage Complaint</NavLink>
+                                                <NavLink className="dropdown-item" to={"/dashbord/admin/manageComplaint"} >Manage Complaint</NavLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -110,7 +110,7 @@ const Header = () => {
                                     </li>
 
                                     <li className="nav-item">
-                                        <NavLink to="/dashbord/user/home" className="nav-link" >Manage User</NavLink>
+                                        <NavLink to="/dashbord/admin/manageUser" className="nav-link" >Manage User</NavLink>
                                     </li>
                                 </>) : (<>
                                     <li className="nav-item">
