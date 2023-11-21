@@ -19,7 +19,7 @@ const Header = () => {
                         <span className="navbar-toggler-icon" />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <Link to="/" className="navbar-brand " >Prescription</Link>
+                        <Link to="#" className="navbar-brand " >Prescription</Link>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             {
                                 auth?.user?.role === 1 ? (<>
@@ -36,7 +36,7 @@ const Header = () => {
                                                 <NavLink className="dropdown-item" to={"/dashbord/admin/addCompany"} >Add Company</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to={"/"} className="dropdown-item" >Add Medicine</NavLink>
+                                                <NavLink to={"/dashbord/admin/addMedicine"} className="dropdown-item" >Add Medicine</NavLink>
                                             </li>
                                         </ul>
                                     </li>
