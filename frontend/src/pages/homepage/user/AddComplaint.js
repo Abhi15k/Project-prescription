@@ -69,7 +69,7 @@ function AddComplaint() {
                                             setDescription(e.target.value);
                                             setDescriptionError(false);
                                         }}
-                                        type="textarea"
+                                        type="text"
                                         label="Description"
                                         autoFocus
                                         fullWidth

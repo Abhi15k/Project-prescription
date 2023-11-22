@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import { useAuth } from '../../context/Auth';
+import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
     const [auth, setAuth] = useAuth();
@@ -97,7 +98,7 @@ const Header = () => {
                                     </li>
                                     <li className="nav-item dropdown">
                                         <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            {auth?.user.name}
+                                        <CgProfile /> {auth?.user.name}
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
@@ -131,7 +132,7 @@ const Header = () => {
                                     </li>
                                     <li className="nav-item dropdown">
                                         <NavLink className="nav-link " role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            {auth?.user.name}
+                                        <CgProfile /> {auth?.user.name}
                                         </NavLink>
                                         <ul className="dropdown-menu">
                                             <li>
