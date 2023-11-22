@@ -6,8 +6,6 @@ const AdminPage = () => {
     const [auth, setAuth] = useAuth();
     return (
         <Layout>
-    return (
-        <Layout>
             <div className="App">
                 <main className="main-content">
                     <section className="hero-section">
@@ -19,7 +17,6 @@ const AdminPage = () => {
                     </section>
                 </main>
             </div>
-        </Layout>
         </Layout>
     )
 }
