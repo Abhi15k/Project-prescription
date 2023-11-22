@@ -5,8 +5,7 @@ import { useAuth } from '../../context/Auth'
 const AdminPage = () => {
     const [auth, setAuth] = useAuth();
     return (
-        <Layout>
-    return (
+    
         <Layout>
             <div className="App">
                 <main className="main-content">
@@ -20,7 +19,7 @@ const AdminPage = () => {
                 </main>
             </div>
         </Layout>
-        </Layout>
+    
     )
 }
 
