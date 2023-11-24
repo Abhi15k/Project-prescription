@@ -19,6 +19,7 @@ import ManageUser from './pages/homepage/admin/ManageUser';
 import ManageComplaint from './pages/homepage/admin/ManageComplaint';
 import AddComplaint from './pages/homepage/user/AddComplaint';
 import YourComplaints from './pages/homepage/user/YourComplaints';
+import Contact from './pages/homepage/user/Contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='user/prescription' element={<Prescription />} />
         <Route path='user/account' element={<Account />} />
         <Route path='user/about' element={<About />} />
+        <Route path='user/contact' element={<Contact />} />
         <Route path='user/addComplaint' element={< AddComplaint />} />
         <Route path='user/yourComplaints' element={< YourComplaints />} />
       </Route>

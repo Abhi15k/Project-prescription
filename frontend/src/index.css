@@ -86,3 +86,17 @@ font-family: 'Poppins', sans-serif; */
   transform: translateY(-5px);
 }
 
+
+/* Contact us  */
+.d-flex{
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.image{
+  border-radius: 10px;
+  box-shadow: 0 8px 6px  rgba(52, 47, 47, 0.865);
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0 solid gray !important;
+}
