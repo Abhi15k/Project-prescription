@@ -100,3 +100,30 @@ font-family: 'Poppins', sans-serif; */
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: 0 solid gray !important;
 }
+/* homepage */
+.app {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  padding: 40px;
+}
+
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
